@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "creation": "2021-07-01 13:23:25.755007",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "programme_name",
+  "theme"
+ ],
+ "fields": [
+  {
+   "fieldname": "programme_name",
+   "fieldtype": "Select",
+   "label": "Programme Name",
+   "options": "Monthly Revival\nCrusade"
+  },
+  {
+   "fieldname": "theme",
+   "fieldtype": "Data",
+   "label": "Theme"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-07-01 13:49:40.687132",
+ "modified_by": "Administrator",
+ "module": "Dlbc Attendance",
+ "name": "DLBC Special Programme",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

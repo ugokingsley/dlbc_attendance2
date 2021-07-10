@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "autoname": "format:{district_church_name}-{#####}",
+ "creation": "2021-07-01 12:35:16.653896",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "country_name",
+  "state",
+  "region",
+  "old_group_or_lga_name",
+  "group_of_districts_name",
+  "district_church_name",
+  "contact_email",
+  "phone",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "country_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country Name",
+   "options": "DLBC Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "DLBC State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Region",
+   "options": "DLBC Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "old_group_or_lga_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Old Group or LGA Name",
+   "options": "DLBC Old Group or LGA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group_of_districts_name",
+   "fieldtype": "Link",
+   "label": "Group of Districts Name",
+   "options": "DLBC Group Of Districts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district_church_name",
+   "fieldtype": "Data",
+   "label": "District Church Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-01 12:35:16.653896",
+ "modified_by": "Administrator",
+ "module": "Dlbc Attendance",
+ "name": "DLBC District or Local Church",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

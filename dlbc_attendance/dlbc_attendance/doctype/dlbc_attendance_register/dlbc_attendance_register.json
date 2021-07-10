@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "creation": "2021-07-01 13:53:20.143217",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "district_church_name",
+  "group_of_districts_name",
+  "old_group_or_lga_name",
+  "region",
+  "state",
+  "country_name",
+  "section_break_9",
+  "dlbc_weekly_activities",
+  "dlbc_special_programme",
+  "members_register",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "depends_on": "district_church_name",
+   "fetch_from": "district_church_name.country_name",
+   "fieldname": "country_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Country Name",
+   "reqd": 1
+  },
+  {
+   "depends_on": "district_church_name",
+   "fetch_from": "district_church_name.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "State"
+  },
+  {
+   "depends_on": "district_church_name",
+   "fetch_from": "district_church_name.region",
+   "fieldname": "region",
+   "fieldtype": "Data",
+   "label": "Region"
+  },
+  {
+   "depends_on": "district_church_name",
+   "fetch_from": "district_church_name.old_group_or_lga_name",
+   "fieldname": "old_group_or_lga_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Old Group or LGA Name"
+  },
+  {
+   "depends_on": "district_church_name",
+   "fetch_from": "district_church_name.group_of_districts_name",
+   "fieldname": "group_of_districts_name",
+   "fieldtype": "Data",
+   "label": "Group of Districts Name"
+  },
+  {
+   "fieldname": "district_church_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District Church Name",
+   "options": "DLBC District or Local Church",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Attendance Register"
+  },
+  {
+   "fieldname": "dlbc_weekly_activities",
+   "fieldtype": "Link",
+   "label": "DLBC Weekly Activities",
+   "options": "DLBC Weekly Activities",
+   "reqd": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "members_register",
+   "fieldtype": "Table",
+   "label": "Members Register",
+   "options": "Members Register",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dlbc_special_programme",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "DLBC Special Programme",
+   "options": "DLBC Special Programme"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Read Only",
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-10 12:16:27.503559",
+ "modified_by": "Administrator",
+ "module": "Dlbc Attendance",
+ "name": "DLBC Attendance Register",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

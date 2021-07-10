@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "autoname": "field:state",
+ "creation": "2021-07-01 11:44:34.187670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "country_name",
+  "state",
+  "contact_email",
+  "phone_number",
+  "head_quarters_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "country_name",
+   "fieldtype": "Link",
+   "label": "Country Name",
+   "options": "DLBC Country"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "unique": 1
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "head_quarters_address",
+   "fieldtype": "Data",
+   "label": "Headquaters Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-01 12:04:11.625540",
+ "modified_by": "Administrator",
+ "module": "Dlbc Attendance",
+ "name": "DLBC State",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

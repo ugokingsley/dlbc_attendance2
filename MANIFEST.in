@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dlbc_attendance *.css
+recursive-include dlbc_attendance *.csv
+recursive-include dlbc_attendance *.html
+recursive-include dlbc_attendance *.ico
+recursive-include dlbc_attendance *.js
+recursive-include dlbc_attendance *.json
+recursive-include dlbc_attendance *.md
+recursive-include dlbc_attendance *.png
+recursive-include dlbc_attendance *.py
+recursive-include dlbc_attendance *.svg
+recursive-include dlbc_attendance *.txt
+recursive-exclude dlbc_attendance *.pyc
