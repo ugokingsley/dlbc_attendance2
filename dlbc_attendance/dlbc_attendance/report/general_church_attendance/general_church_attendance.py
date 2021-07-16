@@ -21,7 +21,7 @@ def get_data(filters):
 
 	data = frappe.db.sql(f"""SELECT district_church_name,group_of_districts_name,
 			old_group_or_lga_name,region,state,country_name, dlbc_weekly_activities FROM
-			`tabDLBC Attendance Register` WHERE (creation BETWEEN '{_from}' AND '{to}');""")
+			`tabDLBC Attendance Register` WHERE (creation BETWEEN '{_from}' AND '{to}') {conditions};""")
 	return data
 
 def get_columns():
