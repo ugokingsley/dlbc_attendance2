@@ -15,7 +15,13 @@
   "section_break_9",
   "dlbc_weekly_activities",
   "dlbc_special_programme",
-  "members_register",
+  "number_of_adult_male",
+  "number_of_adult_female",
+  "number_of_youth_male",
+  "number_of_youth_female",
+  "number_of_children_male",
+  "number_of_children_female",
+  "number_of_visitors",
   "total"
  ],
  "fields": [
@@ -85,14 +91,6 @@
    "reqd": 1
   },
   {
-   "columns": 4,
-   "fieldname": "members_register",
-   "fieldtype": "Table",
-   "label": "Members Register",
-   "options": "Members Register",
-   "reqd": 1
-  },
-  {
    "fieldname": "dlbc_special_programme",
    "fieldtype": "Table",
    "hidden": 1,
@@ -103,11 +101,53 @@
    "fieldname": "total",
    "fieldtype": "Read Only",
    "label": "Total"
+  },
+  {
+   "fieldname": "number_of_adult_male",
+   "fieldtype": "Int",
+   "label": "Number Of Adult Male",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_adult_female",
+   "fieldtype": "Int",
+   "label": "Number Of Adult Female",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_youth_male",
+   "fieldtype": "Int",
+   "label": "Number Of Youth Male",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_youth_female",
+   "fieldtype": "Int",
+   "label": "Number Of Youth Female",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_children_male",
+   "fieldtype": "Int",
+   "label": "Number Of Children Male",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_children_female",
+   "fieldtype": "Int",
+   "label": "Number Of Children Female",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_visitors",
+   "fieldtype": "Int",
+   "label": "Number Of Visitors",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 12:16:27.503559",
+ "modified": "2021-07-25 13:29:55.329768",
  "modified_by": "Administrator",
  "module": "Dlbc Attendance",
  "name": "DLBC Attendance Register",

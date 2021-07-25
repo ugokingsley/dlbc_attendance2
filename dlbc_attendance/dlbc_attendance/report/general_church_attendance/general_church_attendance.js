@@ -70,5 +70,6 @@ frappe.query_reports["General Church Attendance"] = {
 			"width": 100,
 			"reqd": 0,
 		},
+		
 	]
 };
