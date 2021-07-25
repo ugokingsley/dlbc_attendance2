@@ -51,3 +51,23 @@ frappe.ui.form.on('Members Register', {
     frm.compute_total(frm, row);
   }
 });
+
+/**
+frappe.ui.form.on('DLBC Attendance Register', {
+
+  total: function(frm){
+    //grab the entire record
+    let total = 0;
+    total = frm.doc.number_of_adult_male + frm.doc.number_of_adult_female + frm.doc.number_of_youth_male + frm.doc.number_of_youth_female
+    + frm.doc.number_of_children_male + frm.doc.number_of_children_female + frm.doc.number_of_visitors
+    
+    console.log(total)
+    frm.set_value('total', total)
+  }
+
+});*/
+
+frappe.ui.form.on("DLBC Attendance Register", "total", function(frm) {
+  frm.set_value("total", frm.doc.number_of_adult_male + frm.doc.number_of_adult_female + frm.doc.number_of_youth_male + frm.doc.number_of_youth_female + frm.doc.number_of_children_male + frm.doc.number_of_children_female + frm.doc.number_of_visitors);
+});
+
