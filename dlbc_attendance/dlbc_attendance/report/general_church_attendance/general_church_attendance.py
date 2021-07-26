@@ -25,7 +25,7 @@ def get_data(filters):
 			old_group_or_lga_name,region,state,country_name, dlbc_weekly_activities,number_of_adult_male,
 			number_of_adult_female, number_of_youth_male, number_of_youth_female, number_of_children_male,
 			number_of_children_female, number_of_visitors, total FROM
-			`tabDLBC Attendance Register` WHERE (creation BETWEEN '{_from}' AND '{to}') ;""")
+			`tabDLBC Attendance Register` WHERE (creation BETWEEN '{_from}' AND '{to}') {conditions};""")
 	return data
 
 def get_columns():
@@ -35,7 +35,7 @@ def get_columns():
 		"Old Group or LGA:Data:180",
 		"Region:Data:180",
 		"State:Data:180",
-		"Country:Data:180"
+		"Country:Data:180",
 		"Weekly Activity:Data:180",
 		"Adult Male:Data:180",
 		"Adult Female:Data:180",
