@@ -1,6 +1,6 @@
 // Copyright (c) 2021, ugo and contributors
 // For license information, please see license.txt
-
+/**
 //major table
 frappe.ui.form.on('DLBC Attendance Register', {
 	// refresh: function(frm) {
@@ -52,7 +52,7 @@ frappe.ui.form.on('Members Register', {
   }
 });
 
-/**
+
 frappe.ui.form.on('DLBC Attendance Register', {
 
   total: function(frm){
@@ -65,9 +65,36 @@ frappe.ui.form.on('DLBC Attendance Register', {
     frm.set_value('total', total)
   }
 
-});*/
+});
 
 frappe.ui.form.on("DLBC Attendance Register", "total", function(frm) {
   frm.set_value("total", frm.doc.number_of_adult_male + frm.doc.number_of_adult_female + frm.doc.number_of_youth_male + frm.doc.number_of_youth_female + frm.doc.number_of_children_male + frm.doc.number_of_children_female + frm.doc.number_of_visitors);
+});*/
+
+frappe.ui.form.on("DLBC Attendance Register", "number_of_adult_male", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
 });
 
+frappe.ui.form.on("DLBC Attendance Register", "number_of_adult_female", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
+});
+
+frappe.ui.form.on("DLBC Attendance Register", "number_of_youth_male", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
+});
+
+frappe.ui.form.on("DLBC Attendance Register", "number_of_youth_female", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
+});
+
+frappe.ui.form.on("DLBC Attendance Register", "number_of_children_male", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
+});
+
+frappe.ui.form.on("DLBC Attendance Register", "number_of_children_female", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
+});
+
+frappe.ui.form.on("DLBC Attendance Register", "number_of_visitors", function(frm) {
+  frm.set_value("total", flt(frm.doc.number_of_adult_male) + flt(frm.doc.number_of_adult_female) + flt(frm.doc.number_of_youth_male) + flt(frm.doc.number_of_youth_female) + flt(frm.doc.number_of_children_male) + flt(frm.doc.number_of_children_female) + flt(frm.doc.number_of_visitors));
+});
